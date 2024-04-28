@@ -8,7 +8,7 @@ Continuation of the old [MicroArch](https://github.com/xiboon/microarch) project
 - All packages added have had files stripped out their `.pkg.tar.zst` files, or recompiled with special configurations, see above.
 
 # How to do this?
-1. Set up your repository inside a profile's `pacman.conf` file, change the path to it to be `file:///home/user/nanoarch/repo`.
+1. Set up your local repositories inside the profile's `pacman.conf` file, change the path to them to be `file:///home/user/nanoarch/kernels` and `file:///home/user/nanoarch/s6`.
 2. Compile a Linux kernel with the configuration provided using the command `make kernel`.
 3. After setting it up run `sudo make` to build your image.<br>
 <sub><sup>*Building the `s6` image requires you to set up the [Artix](https://artixlinux.org) repository with your Arch Linux system.</sub></sup>
