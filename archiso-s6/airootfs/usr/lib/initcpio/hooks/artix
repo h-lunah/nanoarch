@@ -62,7 +62,7 @@ _mnt_sfs() {
     local oper=$( [[ -n "${ip}" && -n "${miso_http_srv}" ]] && echo "mv" || echo "cp" )
 
     if [[ "${copytoram}" == "y" ]]; then
-        msg -n ":: Copying squashfs image to RAM..."
+        msg ":: Copying squashfs image to RAM..."
         if ! "${oper}" "${img}" "${cp2ram}/${img_fullname}" ; then
             echo "ERROR: while copy '${img}' to '${cp2ram}/${img_fullname}'"
             launch_interactive_shell
@@ -159,7 +159,7 @@ _check_sum() {
     local fs="${1}"
     if [[ -f "${bootmnt}/${root}/${fs}\.sfs" ]]; then
         if [[ -f "${bootmnt}/${root}/${fs}\.sfs.sha512" ]]; then
-            msg -n ":: Self-test requested, please wait..."
+            msg ":: Self-test requested, please wait..."
             if _verify_checksum "${fs}"; then
                 msg "done. Checksum is OK, continue booting."
             else
@@ -178,7 +178,7 @@ _check_sig() {
     local fs="${1}"
     if [[ -f "${bootmnt}/${root}/${fs}\.sfs" ]]; then
         if [[ -f "${bootmnt}/${root}/${fs}\.sfs.sig" ]]; then
-            msg -n ":: Signature verification requested, please wait..."
+            msg ":: Signature verification requested, please wait..."
             if _verify_signature "${fs}"; then
                 msg "done. Signature is OK, continue booting."
             else
