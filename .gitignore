@@ -1,7 +1,5 @@
 # kernel builds
 linux
-repo
-archify-kernel
 
 # output and work directories
 out
