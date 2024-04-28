@@ -2,8 +2,9 @@
 Continuation of the old [MicroArch](https://github.com/xiboon/microarch) project with the aim of making [Arch Linux](https://archlinux.org) as small as possible.
 
 # Differences
-- This contains custom configurations for [systemd](https://github.com/systemd/systemd) or [s6](https://github.com/skarnet/s6) adapted to work with a regular copy of [archiso](https://archlinux.org/packages/extra/any/archiso)
-- This also requires you to compile a custom kernel using the configuration provided in this repository.
+- This contains custom configurations for [systemd](https://github.com/systemd/systemd) or [s6](https://github.com/skarnet/s6) adapted to work with a regular copy of [archiso](https://archlinux.org/packages/extra/any/archiso).
+- This also requires you to compile a custom kernel using the configuration provided in this repository.<br>
+<sub><sup>*The [archify-kernel](https://github.com/piotr25691/archify-kernel) tool would be useful here.</sub></sup>
 - All packages added have had files stripped out their `.pkg.tar.zst` files, or recompiled with special configurations, see above.
 
 # How to do this?
