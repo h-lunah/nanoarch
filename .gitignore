@@ -1,5 +1,6 @@
 # kernel builds
 linux
+repo/*.pkg.tar.zst
 
 # output and work directories
 out
