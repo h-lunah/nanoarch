@@ -1,8 +1,0 @@
-# mkinitcpio preset file for the 'linux-hardened' package on archiso
-
-PRESETS=('archiso')
-
-ALL_kver='/boot/vmlinuz-linux-6.8.7-nano'
-ALL_config='/etc/mkinitcpio.conf'
-
-archiso_image="/boot/initramfs-linux-6.8.7-nano.img"
