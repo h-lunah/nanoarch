@@ -1,0 +1,13 @@
+# universal
+linux-6.8.7-nano
+syslinux
+pacman
+sed
+
+# artix only
+device-mapper-s6
+dhcpcd-s6
+esysusers
+etmpfiles
+libbpf
+libmnl

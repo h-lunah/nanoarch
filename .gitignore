@@ -1,0 +1,10 @@
+# kernel builds
+linux
+repo/*.pkg.tar.zst
+repo/*.tar.gz
+repo/*.db
+repo/*.files
+
+# output and work directories
+out
+work
