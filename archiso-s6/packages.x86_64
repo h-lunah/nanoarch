@@ -1,8 +1,9 @@
 # universal
-linux-6.8.7-nano
+linux-6.8.8-nano
 syslinux
 pacman
 sed
+dosfstools
 
 # artix only
 device-mapper-s6
