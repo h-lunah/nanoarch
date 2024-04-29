@@ -38,7 +38,7 @@ test-sudo:
   @test $$UID = 0 || ( echo "must be root to do this."; false )
 
 recommend-sudo:
-  @test $$UID = 0 && ( echo "rerunning as sudo..."; $(MAKE) kernel-sudo )
+  @test $$UID = 0 && ( echo "rerunning as sudo..."; $(MAKE) kernel-sudo ) || true
 
 success:
   @echo "Build successful! $$(ls -Art out | tail -n1)"
