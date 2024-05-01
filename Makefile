@@ -25,7 +25,7 @@ update-db:
   @( cd repo; ./update.sh )
 
 stoptest: test-qemu
-  @pkill -9 "qemu-system-x86_64" &>/dev/null && echo "QEMU terminated" || true
+  @pkill -9 "qemu" &>/dev/null && echo "QEMU terminated" || true
 
 test: test-qemu
   @qemu-system-x86_64 -cpu qemu64 -m 1G -cdrom out/$$(eza -snew out | tail -n 1) -boot order=d -display none -vnc :0 -daemonize

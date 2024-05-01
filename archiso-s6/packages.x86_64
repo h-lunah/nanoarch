@@ -4,6 +4,7 @@ syslinux
 pacman
 sed
 dosfstools
+exfat-utils
 
 # artix only
 device-mapper-s6

@@ -3,3 +3,4 @@ pacman
 syslinux
 sed
 dosfstools
+exfat-utils
