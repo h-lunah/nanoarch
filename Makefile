@@ -28,7 +28,7 @@ stoptest: test-qemu
   @pkill -9 "qemu" &>/dev/null && echo "QEMU terminated" || true
 
 test: test-qemu
-  @qemu-system-x86_64 -cpu qemu64 -m 1G -cdrom out/$$(eza -snew out | tail -n 1) -boot order=d -display none -vnc :0 -daemonize
+  @qemu-system-x86_64 -m 512M -cdrom out/$$(eza -snew out | tail -n 1) -vnc :0 -daemonize
   @echo "QEMU started, connect to $$(curl ipinfo.io/ip 2>/dev/null):5900"
 
 test-qemu:
