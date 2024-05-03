@@ -2,7 +2,7 @@
 
 PRESETS=('archiso')
 
-ALL_kver='/boot/vmlinuz-linux-6.8.8-nano'
+ALL_kver='/boot/vmlinuz-linux-nano'
 ALL_config='/etc/mkinitcpio.conf'
 
-archiso_image="/boot/initramfs-linux-6.8.8-nano.img"
+archiso_image="/boot/initramfs-linux-nano.img"
