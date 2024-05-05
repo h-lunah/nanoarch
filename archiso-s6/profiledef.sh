@@ -18,7 +18,7 @@ pacman_conf="pacman.conf"
 
 # this is SLOW but saves approx. 5 MB
 airootfs_image_type="erofs"
-airootfs_image_tool_options=('-zlzma,109' '-C1048576' '-Eztailpacking,all-fragments,dedupe')
+airootfs_image_tool_options=('-zlzma,109' '-C1048576' '-Eztailpacking,all-fragments,dedupe,force-inode-compact' '-T0')
 
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
