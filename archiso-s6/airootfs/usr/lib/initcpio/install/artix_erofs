@@ -5,6 +5,7 @@ build() {
     add_module "loop"
     add_module "dm-snapshot"
     add_module "overlay"
+    add_module "erofs"
 
     add_runscript
 
