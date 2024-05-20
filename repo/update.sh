@@ -4,4 +4,4 @@ set -e
 rm -rf *.db*
 rm -rf *.files*
 
-repo-add nanoarch-kernels.db.tar.gz *.tar.zst
+repo-add nanoarch.db.tar.gz *.tar.zst
